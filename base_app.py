@@ -27,6 +27,9 @@ import joblib,os
 from PIL import Image
 # Data dependencies
 import pandas as pd
+import Data_cleaning as cleanText
+from nlppreprocess import NLP
+nlp = NLP()
 
 
 image = Image.open('img/3.png')
@@ -142,24 +145,29 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 		# Creating a text box for user input
 		tweet_text = st.text_area("Enter your Text")
 
-		model_name = [ "Logistic Regression Classifier"]
+		model_name = ["Decision Tree Classifier", "Random Forest Classifier", "Logistic Regression Classifier"]
 		#selection = st.sidebar.selectbox("Choose Option", options)
 		model_choice = st.selectbox(
-                "Select a Classifier Model", model_name)
+                "Select a Classifier  Model", model_name)
 		
 	    
 
 		if st.button("Classify"):
 			# Transforming user input with vectorizer
-			vect_text = tweet_cv.transform([tweet_text]).toarray()
+			text = cleanText.cleaner(tweet_text) # cleaning the text using preprocessing function
+			vect_text = tweet_cv.transform([text]).toarray()
 			# Load your .pkl file with the model of your choice + make predictions
 			# Try loading in multiple models to give the user a choice
-			predictor = joblib.load(open(os.path.join("resources/Logistic_regression.pkl"),"rb"))
-			prediction = predictor.predict(vect_text)
-
-				# When model has successfully run, will print prediction
-				# You can use a dictionary or similar structure to make this output
-				# more human interpretable.
+			
+			if model_choice == "Decision Tree Classifier":
+				predictor_tree = joblib.load(open(os.path.join("resources/Dec_tree_model.pkl"),"rb"))
+				prediction = predictor_tree.predict(vect_text)
+			elif model_choice == "Support Vector Classifier":
+				predictor_svm = joblib.load(open(os.path.join("resources/Random_model.pkl"),"rb"))
+				prediction = predictor_svm.predict(vect_text)
+			elif model_choice == "Logistic Regression Classifier":
+				predictor_lr = joblib.load(open(os.path.join("resources/Logistic_regression.pkl"),"rb"))
+				prediction = predictor_lr.predict(vect_text)
 
 			if prediction ==1 :
 				st.success("wow, you believe in climate change")
@@ -170,7 +178,7 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 			elif prediction == 2 :
 				st.success("well, your tweet links to factual news about climate change")
 
-			st.success("Text Categorized as: {}".format(prediction))
+			
 		
 	if selection == 'Analysis📘':
 		st.header('Welcome to the Analysis page')
@@ -218,7 +226,7 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 			with st.expander("See explanation"):
 				st.write("""
 				The word cloud suggests that the most positive feelings are global warming, climate change, news, reality and the likes expressed in the word cloud. 
- No link or http shows that we did a lot of data cleaning and it works. With the word cloud, we can see  words that match positive sentiments.
+                No link or http shows that we did a lot of data cleaning and it works. With the word cloud, we can see  words that match positive sentiments.
 				""")
 			st.write(link_Pro)
 			st.image("img/positive words.png")
@@ -227,7 +235,7 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 			with st.expander("See explanation"):
 				st.write("""
 				The majority of neutrals discuss, participate and question the impacts of climate change, as seen with the interviewers and scientists. 
- They talk about  penguins in danger from the effects of climate change. They talk about  climate change, global warming..
+                They talk about  penguins in danger from the effects of climate change. They talk about  climate change, global warming..
 				""")
 			st.write(link_Neutral)
 			st.image("img/neutral words.png")
