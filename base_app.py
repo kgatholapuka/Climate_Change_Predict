@@ -31,7 +31,8 @@ import Data_cleaning as cleanText
 from nlppreprocess import NLP
 nlp = NLP()
 
-
+import nltk
+nltk.download('punkt')
 image = Image.open('img/3.png')
 st.set_page_config(page_title='Networkers.net',page_icon = image)
 
