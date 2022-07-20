@@ -140,7 +140,7 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 		st.write("Purpose: To provide data on how people perceive climate change. Our model will predict whether the text indicates whether climate change is caused by humans.")
 		st.markdown(quzi)
 		# Creating a text box for user input
-		tweet_text = st.text_area("Enter your Text","e.g. Climate change is man-made")
+		tweet_text = st.text_area("Enter your Text")
 
 		model_name = [ "Logistic Regression Classifier"]
 		#selection = st.sidebar.selectbox("Choose Option", options)
@@ -170,7 +170,7 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 			elif prediction == 2 :
 				st.success("well, your tweet links to factual news about climate change")
 
-			#st.success("Text Categorized as: {}".format(prediction))
+			st.success("Text Categorized as: {}".format(prediction))
 		
 	if selection == 'Analysis📘':
 		st.header('Welcome to the Analysis page')
@@ -235,11 +235,11 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 		elif graphs_choice == "Sentiment Length Distribution":
 			with st.expander("See explanation"):
 				st.write("""
-				From the graphs below, we can see that the tweets belonging to the  climate change group are generally longer, and the shortest 
-  tweets belong to the  climate change group. "
- We also found that  climate change neutral tweets tend to be longer than tweets.
+				The graphs show that all opinions have roughly similar average lengths, which may be because each tweet has a word limit. However, 
+				there is a noticeable difference when we compare the density of positive and negative sentiments.
+				 To determine what needs to be done in the sentimental analysis stage, we will do additional analysis.
 				""")
-			st.image("img/tweets length.png")	
+			st.image("img/line.png",use_column_width =True)	
 			
 		
 	
