@@ -34,6 +34,7 @@ nlp = NLP()
 import nltk
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
 image = Image.open('img/3.png')
 st.set_page_config(page_title='Networkers.net',page_icon = image)
 
