@@ -169,6 +169,9 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 				predictor_lr = joblib.load(open(os.path.join("resources/Logistic_regression.pkl"),"rb"))
 				prediction = predictor_lr.predict(vect_text)
 
+	
+			
+
 			if prediction ==1 :
 				st.success("wow, you believe in climate change")
 			elif prediction == 0 :
