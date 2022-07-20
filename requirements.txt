@@ -8,4 +8,8 @@ scikit-learn==1.1.1
 
 nlppreprocess  == 1.0.2
 
+<<<<<<< HEAD
 NLTK  == 3.6.5
+=======
+NLTK  == 3.6.5
+>>>>>>> 682aef7f8ca4ef545b5ae11f1d8be3a38d4a4e32
