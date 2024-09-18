@@ -121,18 +121,18 @@ def main():
 		# You can read a markdown file from supporting resources folder
 		st.markdown("""
 		The collection of this data was funded by a Canada Foundation for Innovation JELF Grant to Chris Bauch, University of Waterloo.
-This dataset aggregates tweets pertaining to climate change collected between Apr 27, 2015 and Feb 21, 2018. In total, 43943 tweets were annotated. 
-Each tweet is labelled independently by 3 reviewers. 
-This dataset only contains tweets that all 3 reviewers agreed on (the rest were discarded).
-    Each tweet is labelled as one of the following classes:
+		This dataset aggregates tweets pertaining to climate change collected between Apr 27, 2015 and Feb 21, 2018. In total, 43943 tweets were annotated. 
+		Each tweet is labelled independently by 3 reviewers. 
+		This dataset only contains tweets that all 3 reviewers agreed on (the rest were discarded).
+    		Each tweet is labelled as one of the following classes:
 		""")
 
 		st.markdown("""
 		
 		* 2 News: the tweet links to factual news about climate change
-* 1 Pro: the tweet supports the belief of man-made climate change
-* 0 Neutral: the tweet neither supports nor refutes the belief of man-made climate change
-* -1 Anti: the tweet does not believe in man-made climate change
+		* 1 Pro: the tweet supports the belief of man-made climate change
+		* 0 Neutral: the tweet neither supports nor refutes the belief of man-made climate change
+		* -1 Anti: the tweet does not believe in man-made climate change
 		""")
        
 		st.markdown("Below is raw data that we used for Bulding the model")
@@ -200,8 +200,8 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 			with st.expander("See explanation"):
 				st.write("""
 				Taking a closer look at the distribution of tweets, we found that the data was severely skewed 
-, with the majority of tweets being of the "professional" category, with 
- advocating belief in human-caused climate change. create. 
+				, with the majority of tweets being of the "professional" category, with 
+ 				advocating belief in human-caused climate change. create. 
 				""")
         
 			st.image("img/Distribution.png",use_column_width=True)
@@ -210,10 +210,10 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 			with st.expander("See explanation"):
 				st.write("""
 				Most of the keywords in  negative emotions are very political and scientific, showing many of the views of 
- world leaders  on the topic of climate change. Trump, a  climate change staunch individual appears very substantial including scientific terms, fabricated, fake, alarmist 
-  shows that many people do not believe it to be true on a hunch or because  lack of scientific evidence to support the claim. 
- There are also a lot of words like scam, 
- money, man made that indicate one of the reasons why they might not really believe in climate change or feel negative about it.
+ 				world leaders  on the topic of climate change. Trump, a  climate change staunch individual appears very substantial including scientific terms, fabricated, fake, alarmist 
+  				shows that many people do not believe it to be true on a hunch or because  lack of scientific evidence to support the claim. 
+ 				There are also a lot of words like scam, 
+ 				money, man made that indicate one of the reasons why they might not really believe in climate change or feel negative about it.
 				""")
 			st.write(link_Negative)
 			st.image("img/negative words.png")
@@ -222,9 +222,9 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 			with st.expander("See explanation"):
 				st.write("""
 				As we can see, Donald Trump plays a huge role when it comes to  news sentiment. 
- They also reported that most of the problems were included in the analysis of  other included words. Executive Orders also appear frequently. 
- The word cloud  also shows that the words are well distributed and  almost identical in pronunciation. 
- Most  words are not asked often, except "climate change". .
+ 				They also reported that most of the problems were included in the analysis of  other included words. Executive Orders also appear frequently. 
+ 				The word cloud  also shows that the words are well distributed and  almost identical in pronunciation. 
+ 				Most  words are not asked often, except "climate change". .
 				""")
 			st.write(link_news)
 			st.image("img/new words.png")
@@ -233,7 +233,7 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 			with st.expander("See explanation"):
 				st.write("""
 				The word cloud suggests that the most positive feelings are global warming, climate change, news, reality and the likes expressed in the word cloud. 
-                No link or http shows that we did a lot of data cleaning and it works. With the word cloud, we can see  words that match positive sentiments.
+                		No link or http shows that we did a lot of data cleaning and it works. With the word cloud, we can see  words that match positive sentiments.
 				""")
 			st.write(link_Pro)
 			st.image("img/positive words.png")
@@ -242,7 +242,7 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 			with st.expander("See explanation"):
 				st.write("""
 				The majority of neutrals discuss, participate and question the impacts of climate change, as seen with the interviewers and scientists. 
-                They talk about  penguins in danger from the effects of climate change. They talk about  climate change, global warming..
+                		They talk about  penguins in danger from the effects of climate change. They talk about  climate change, global warming..
 				""")
 			st.write(link_Neutral)
 			st.image("img/neutral words.png")
@@ -268,19 +268,19 @@ This dataset only contains tweets that all 3 reviewers agreed on (the rest were 
 				"""
 				Welcome to Networkers, your number one source for Artificial intelligence,Machine Learning and Data Analysis Development. 
 				We're dedicated to giving you the very best .
-Founded in 2021 by Kgathola Puka, Networkers has come a long way from its beginnings in a
-home office in Hillbrow. When Mr Puka first started out,
-his  passion for Data which  drove him to  do intense research, and gave him the impetus to turn hard work and inspiration into to a booming online 
-store. We now serve customers all over the Country and Soon will be going global, and are thrilled to be a part of the 
-AI concept wing of the industry.
+				Founded in 2021 by Kgathola Puka, Networkers has come a long way from its beginnings in a
+				home office in Randburg. When Mr Puka first started out,
+				his  passion for Data which  drove him to  do intense research, and gave him the impetus to turn hard work and inspiration into to a booming online 
+				store. We now serve customers all over the Country and Soon will be going global, and are thrilled to be a part of the 
+				AI concept wing of the industry.
 
-We hope you enjoy our products as much as we enjoy offering them to you. 
-If you have any questions or comments, please don't hesitate to contact us.
+				We hope you enjoy our products as much as we enjoy offering them to you. 
+				If you have any questions or comments, please don't hesitate to contact us.
 
-Sincerely,
+				Sincerely,
 
-Kgathola Puka,
-CEO and Founder
+				Kgathola Puka,
+				CEO and Founder
 				""")
 
 		st.header(":mailbox:Get in Touch with me!")
