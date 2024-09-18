@@ -286,13 +286,13 @@ def main():
 		st.header(":mailbox:Get in Touch with me!")
 		contact_form = """
 
-	 <form action="https://formsubmit.co/kgatholapuka@gmail.com" method="POST">
-	 <input type="hidden" name="_captcha" value="false">	
-     <input type="text" name="name" placeholder="Your Name" required>
-     <input type="email" name="email" placeholder = "Your email" required>
-	 <textarea name="message" placeholder="Your message"></textarea>
-     <button type="submit">Send</button>
-     </form>		"""
+	 	<form action="https://formsubmit.co/kgatholapuka@gmail.com" method="POST">
+	 	<input type="hidden" name="_captcha" value="false">	
+     		<input type="text" name="name" placeholder="Your Name" required>
+     		<input type="email" name="email" placeholder = "Your email" required>
+	 	<textarea name="message" placeholder="Your message"></textarea>
+     		<button type="submit">Send</button>
+     		</form>		"""
 
 		st.markdown(contact_form,unsafe_allow_html=True)
 		
