@@ -260,45 +260,45 @@ def main():
 	
 
 	
-	if selection == 'About':
-    st.header("🌍 About Networkers.net")
-    st.image('img/Deep-Learning.jpg', caption="Networkers.net", use_column_width=True)
-
-    st.markdown(
-        """
-        ### Welcome to **Networkers.net**  
-        Your trusted partner in **Artificial Intelligence**, **Machine Learning**, and **Data Analytics** solutions.  
-
-        Founded in **2021** by *Kgathola Puka*, Networkers.net began as a small home-based initiative in **Randburg**, driven by a deep passion for data and technology.  
-        Over the years, we’ve grown into a dynamic digital solutions company capable of building **anything our clients envision** — from intelligent applications and predictive models to full-scale business automation systems.  
-
-        ---
-        ### 🤖 About the Climate Change Prediction App
-        This application is one of our flagship AI projects — a tool designed to support global efforts in understanding and combating **climate change** through the power of **machine learning**.  
-
-        Using advanced algorithms such as:
-        - Decision Tree Classifier  
-        - Random Forest Classifier  
-        - Logistic Regression Classifier  
-
-        The app analyzes environmental data to **predict and model climate trends**, helping researchers, policymakers, and organizations make informed, data-driven decisions for a sustainable future.  
-
-        We built this system with **accuracy, scalability, and simplicity** in mind — empowering users to interact with complex AI models through an intuitive interface.  
-
-        ---
-        ### 💡 Our Vision
-        To be Africa’s leading hub for **intelligent digital solutions** that bridge the gap between **innovation and impact**.  
-
-        ---
-        ### 📬 Get in Touch
-        We’d love to hear from you!  
-        If you have any questions, ideas, or collaboration requests, please don’t hesitate to reach out.  
-
-        **Sincerely,**  
-        **Kgathola Puka**  
-        *CEO & Founder, Networkers.net*
-        """
-    )
+		if selection == 'About':
+	    st.header("🌍 About Networkers.net")
+	    st.image('img/Deep-Learning.jpg', caption="Networkers.net", use_column_width=True)
+	
+	    st.markdown(
+	        """
+	        ### Welcome to **Networkers.net**  
+	        Your trusted partner in **Artificial Intelligence**, **Machine Learning**, and **Data Analytics** solutions.  
+	
+	        Founded in **2021** by *Kgathola Puka*, Networkers.net began as a small home-based initiative in **Randburg**, driven by a deep passion for data and technology.  
+	        Over the years, we’ve grown into a dynamic digital solutions company capable of building **anything our clients envision** — from intelligent applications and predictive models to full-scale business automation systems.  
+	
+	        ---
+	        ### 🤖 About the Climate Change Prediction App
+	        This application is one of our flagship AI projects — a tool designed to support global efforts in understanding and combating **climate change** through the power of **machine learning**.  
+	
+	        Using advanced algorithms such as:
+	        - Decision Tree Classifier  
+	        - Random Forest Classifier  
+	        - Logistic Regression Classifier  
+	
+	        The app analyzes environmental data to **predict and model climate trends**, helping researchers, policymakers, and organizations make informed, data-driven decisions for a sustainable future.  
+	
+	        We built this system with **accuracy, scalability, and simplicity** in mind — empowering users to interact with complex AI models through an intuitive interface.  
+	
+	        ---
+	        ### 💡 Our Vision
+	        To be Africa’s leading hub for **intelligent digital solutions** that bridge the gap between **innovation and impact**.  
+	
+	        ---
+	        ### 📬 Get in Touch
+	        We’d love to hear from you!  
+	        If you have any questions, ideas, or collaboration requests, please don’t hesitate to reach out.  
+	
+	        **Sincerely,**  
+	        **Kgathola Puka**  
+	        *CEO & Founder, Networkers.net*
+	        """
+	    )
 
 
 		st.header("Get in Touch with us!")
