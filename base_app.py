@@ -261,16 +261,12 @@ def main():
 
 	
 	if selection == 'About':
-		st.header("About Networkers.net")
-		#st.image('img/Deep-Learning.jpg',caption="Networkers.net")
+		st.header(" Networkers.net")
+		st.image('img/Deep-Learning.jpg',caption="Networkers.net")
 		#st.markdown(link, unsafe_allow_html=True)
 		st.writer("")
 		
-		st.writer("""
-			
-
 		
-				  """)
 		st.write(
 				"""
 				Welcome to Networkers!!
