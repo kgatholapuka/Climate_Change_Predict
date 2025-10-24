@@ -92,8 +92,8 @@ def main():
 		st.write("""
 		This web application aims to predict an individual's beliefs about climate change based on historical tweet data and provide insights into different climate change emotion 
 		classes. Climate change has long been recognized by the scientific community as a major problem facing humankind. But even with the scientific consensus on climate change,
-		 public opinion on this issue can be different. The goal of this task is to use tweet data to build a machine learning classification model that 
-		 determines whether a person believes in climate change. 
+		public opinion on this issue can be different. The goal of this task is to use tweet data to build a machine learning classification model that 
+		determines whether a person believes in climate change. 
 		The project also provides insights into public opinion on climate change.
 		""")
 		
@@ -266,24 +266,23 @@ def main():
 		#st.markdown(link, unsafe_allow_html=True)
 		st.write(
 				"""
-				Welcome to Networkers,
+				Welcome to Networkers!!
 				
-				your number one source for Artificial intelligence,Machine Learning and Data Analysis Development. 
-				We're dedicated to giving you the very best.Founded in 2021 by Kgathola Puka, Networkers has come a long way from its beginnings in a
-				home office in Randburg. When Mr Puka first started out,his  passion for Data which  drove him to  do intense research, and gave him the impetus to turn hard work and inspiration into to a booming online 
-				store. We now serve customers all over the Country and Soon will be going global, and are thrilled to be a part of the 
-				AI concept wing of the industry.
+				Your number one source for Artificial intelligence,Machine Learning and Data Analysis Development. 
+				
+				We're dedicated to giving you the very best. Founded in 2021 by Kgathola Puka, Networkers has come a long way from its beginnings in a
+				home office in Randburg. When Mr Puka first started out, his passion for Data which drove him to do intense research, and gave him the impetus to turn hard work and inspiration into to a booming online 
+				platform where we can help customer reach their goals/ targets. We 
 
 				We hope you enjoy our products as much as we enjoy offering them to you. 
 				If you have any questions or comments, please don't hesitate to contact us.
 
 				Sincerely,
-
 				Kgathola Puka,
 				CEO and Founder
 				""")
 
-		st.header("Get in Touch with me!")
+		st.header("Get in Touch with us!")
 		contact_form = """
 
 	 	<form action="https://formsubmit.co/kgatholapuka@gmail.com" method="POST">
