@@ -278,7 +278,9 @@ def main():
 				If you have any questions or comments, please don't hesitate to contact us.
 
 				Sincerely,
+				
 				Kgathola Puka,
+				
 				CEO and Founder
 				""")
 
