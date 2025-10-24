@@ -266,11 +266,11 @@ def main():
 		#st.markdown(link, unsafe_allow_html=True)
 		st.write(
 				"""
-				Welcome to Networkers, your number one source for Artificial intelligence,Machine Learning and Data Analysis Development. 
-				We're dedicated to giving you the very best .
-				Founded in 2021 by Kgathola Puka, Networkers has come a long way from its beginnings in a
-				home office in Randburg. When Mr Puka first started out,
-				his  passion for Data which  drove him to  do intense research, and gave him the impetus to turn hard work and inspiration into to a booming online 
+				Welcome to Networkers,
+				
+				your number one source for Artificial intelligence,Machine Learning and Data Analysis Development. 
+				We're dedicated to giving you the very best.Founded in 2021 by Kgathola Puka, Networkers has come a long way from its beginnings in a
+				home office in Randburg. When Mr Puka first started out,his  passion for Data which  drove him to  do intense research, and gave him the impetus to turn hard work and inspiration into to a booming online 
 				store. We now serve customers all over the Country and Soon will be going global, and are thrilled to be a part of the 
 				AI concept wing of the industry.
 
