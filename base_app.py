@@ -264,7 +264,7 @@ def main():
 		st.header(" Networkers.net")
 		st.image('img/Deep-Learning.jpg',caption="Networkers.net")
 		#st.markdown(link, unsafe_allow_html=True)
-		st.writer("")
+		
 		
 		
 		st.write(
