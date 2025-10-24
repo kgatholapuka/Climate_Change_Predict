@@ -261,14 +261,21 @@ def main():
 
 	
 	if selection == 'About':
-		st.header("Networkers.net")
-		st.image('img/Deep-Learning.jpg',caption="Networkers.net")
+		st.header("About Networkers.net")
+		#st.image('img/Deep-Learning.jpg',caption="Networkers.net")
 		#st.markdown(link, unsafe_allow_html=True)
+		st.writer("")
+		
+		st.writer("""
+			
+
+		
+				  """)
 		st.write(
 				"""
 				Welcome to Networkers!!
 				
-				Your number one source for Artificial intelligence,Machine Learning and Data Analysis Development. 
+				Your number one source for Artificial intelligence, Machine Learning and Data Analysis Development. 
 				
 				We're dedicated to giving you the very best. Founded in 2021 by Kgathola Puka, Networkers has come a long way from its beginnings in a
 				home office in Randburg. When Mr Puka first started out, his passion for Data which drove him to do intense research, and gave him the impetus to turn hard work and inspiration into to a booming online 
