@@ -283,7 +283,7 @@ def main():
 				CEO and Founder
 				""")
 
-		st.header(":mailbox:Get in Touch with me!")
+		st.header("Get in Touch with me!")
 		contact_form = """
 
 	 	<form action="https://formsubmit.co/kgatholapuka@gmail.com" method="POST">
